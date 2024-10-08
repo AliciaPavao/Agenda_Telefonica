@@ -1,4 +1,4 @@
-namespace Agenda_Telefonica
+namespace agenda_telefonica
 {
     internal static class Program
     {
