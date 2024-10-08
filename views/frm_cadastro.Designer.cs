@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_cadastro));
             txt_senhadnv = new TextBox();
             txt_senha = new TextBox();
             txt_tel = new TextBox();
@@ -40,6 +41,8 @@
             lbl_nome = new Label();
             btn_cadastro = new Button();
             button2 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txt_senhadnv
@@ -159,12 +162,23 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(12, 197);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(172, 151);
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
             // frm_cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LemonChiffon;
             ClientSize = new Size(606, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(btn_cadastro);
             Controls.Add(lbl_nome);
@@ -180,6 +194,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "frm_cadastro";
             Text = "frm_cadastro";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -198,5 +213,6 @@
         private Label lbl_nome;
         private Button btn_cadastro;
         private Button button2;
+        private PictureBox pictureBox1;
     }
 }
